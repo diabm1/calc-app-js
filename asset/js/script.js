@@ -23,83 +23,105 @@ const nine = document.querySelector("#nine");
 // console.log(nine)
 let buttonClicked = false;
 
-zero.addEventListener("click", function (e) {
-  // console.log(this.getAttribute('zero'))
+const divide = document.querySelector("#divide");
+const multiply = document.querySelector("#multiply");
+const minus = document.querySelector("#minus");
+const decimal = document.querySelector("#decimal");
+const equals = document.querySelector("#equals");
+const plus = document.querySelector("#plus");
+
+const screen = document.querySelector("#screen");
+screen.innerHTML = parseInt(four.value) * parseInt(two.value);
+//what represents num1?
+//what represents num2?
+//it would be the number pressed
+
+// const mPlus;
+// const mMinus;
+// const mRecall;
+// const mClear;
+// ÷
+
+// const clearEntry = "";
+
+//operations buttons
+divide.addEventListener("click", function (e) {
   e.preventDefault();
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("zero clicked!");
-    console.log(zero.value);
+    console.log(divide.value);
   }
 });
 
-one.addEventListener("click", function (e) {
-  // console.log(this.getAttribute('zero'))
+multiply.addEventListener("click", function (e) {
   e.preventDefault();
   buttonClicked = true;
   if (buttonClicked) {
-    // console.log("one clicked!");
-    console.log(one.value);
+    // console.log("zero clicked!");
+    console.log(typeof multiply.value);
   }
 });
 
-two.addEventListener("click", function (e) {
-  // console.log(this.getAttribute('zero'))
+minus.addEventListener("click", function (e) {
   e.preventDefault();
   buttonClicked = true;
   if (buttonClicked) {
-    // console.log("two clicked!");
-    console.log(two.value);
+    // console.log("zero clicked!");
+    console.log(minus.value);
   }
 });
 
-three.addEventListener("click", function (e) {
-  // console.log(this.getAttribute('zero'))
+//.innerHtml = i / j
+//.innerHtml = i * j
+//.innerHtml = i - j
+//.innerHtml = i + j
+//.innerHtml = i.j
+
+decimal.addEventListener("click", function (e) {
   e.preventDefault();
   buttonClicked = true;
   if (buttonClicked) {
-    // console.log("three clicked!");
-    console.log(three.value);
+    // console.log("zero clicked!");
+    console.log(decimal.value);
   }
 });
 
-four.addEventListener("click", function (e) {
-  // console.log(this.getAttribute('zero'))
+function addition() {
+  //numbers + zero
+  console.log(typeof one.value);
+  console.log(typeof two.value);
+  //   return one.value + two.value;
+}
+
+equals.addEventListener("click", function (e) {
   e.preventDefault();
   buttonClicked = true;
   if (buttonClicked) {
-    // console.log("four clicked!");
-    console.log(four.value);
+    // console.log("zero clicked!");
+    console.log(equals.value);
+    // console.log(addition());
   }
 });
 
-five.addEventListener("click", function (e) {
-  // console.log(this.getAttribute('zero'))
+plus.addEventListener("click", function (e) {
   e.preventDefault();
   buttonClicked = true;
   if (buttonClicked) {
-    // console.log("five clicked!");
-    console.log(five.value);
+    // console.log("zero clicked!");
+    console.log(plus.value);
   }
 });
 
-six.addEventListener("click", function (e) {
-  // console.log(this.getAttribute('zero'))
-  e.preventDefault();
-  buttonClicked = true;
-  if (buttonClicked) {
-    // console.log("six clicked!");
-    console.log(six.value);
-  }
-});
 
-seven.addEventListener("click", function (e) {
+//numbers buttons
+nine.addEventListener("click", function (e) {
   // console.log(this.getAttribute('zero'))
   e.preventDefault();
   buttonClicked = true;
+//   nine = parseInt(nine.value);
   if (buttonClicked) {
-    // console.log("seven clicked!");
-    console.log(seven.value);
+    console.log(parseInt(nine.value))
   }
 });
 
@@ -113,15 +135,87 @@ eight.addEventListener("click", function (e) {
   }
 });
 
-nine.addEventListener("click", function (e) {
+seven.addEventListener("click", function (e) {
   // console.log(this.getAttribute('zero'))
   e.preventDefault();
   buttonClicked = true;
   if (buttonClicked) {
-    // console.log("nine clicked!")
-    console.log(nine.value);
+    // console.log("seven clicked!");
+    console.log(seven.value);
   }
 });
+
+six.addEventListener("click", function (e) {
+  // console.log(this.getAttribute('zero'))
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    // console.log("six clicked!");
+    console.log(six.value);
+  }
+});
+
+five.addEventListener("click", function (e) {
+  // console.log(this.getAttribute('zero'))
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    // console.log("five clicked!");
+    console.log(five.value);
+  }
+});
+
+four.addEventListener("click", function (e) {
+  // console.log(this.getAttribute('zero'))
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    // console.log("four clicked!");
+    console.log(four.value);
+  }
+});
+
+three.addEventListener("click", function (e) {
+  // console.log(this.getAttribute('zero'))
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    // console.log("three clicked!");
+    console.log(three.value);
+  }
+});
+
+two.addEventListener("click", function (e) {
+  // console.log(this.getAttribute('zero'))
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    // console.log("two clicked!");
+    console.log(two.value);
+  }
+});
+
+one.addEventListener("click", function (e) {
+  // console.log(this.getAttribute('zero'))
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    // console.log("one clicked!");
+    console.log(one.value);
+  }
+});
+
+zero.addEventListener("click", function (e) {
+  // console.log(this.getAttribute('zero'))
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    // console.log("zero clicked!");
+    console.log(zero.value);
+  }
+});
+
+//Make the rest of the buttons clickable
 
 //MC = Memory Clear sets the memory to 0.
 
