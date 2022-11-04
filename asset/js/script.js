@@ -50,7 +50,7 @@ divide.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("zero clicked!");
-    console.log(divide.value);
+    console.log(typeof divide.value);
   }
 });
 
@@ -68,7 +68,7 @@ minus.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("zero clicked!");
-    console.log(minus.value);
+    console.log(typeof minus.value);
   }
 });
 
@@ -83,7 +83,7 @@ decimal.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("zero clicked!");
-    console.log(decimal.value);
+    console.log(typeof decimal.value);
   }
 });
 
@@ -99,7 +99,7 @@ equals.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("zero clicked!");
-    console.log(equals.value);
+    console.log(typeof equals.value);
     // console.log(addition());
   }
 });
@@ -109,7 +109,7 @@ plus.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("zero clicked!");
-    console.log(plus.value);
+    console.log(typeof plus.value);
   }
 });
 
@@ -120,6 +120,7 @@ nine.addEventListener("click", function (e) {
   e.preventDefault();
   buttonClicked = true;
 //   nine = parseInt(nine.value);
+// Try using Number() instead of parseInt()
   if (buttonClicked) {
     console.log(parseInt(nine.value))
   }
