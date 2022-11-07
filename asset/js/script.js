@@ -66,7 +66,7 @@ multiply.addEventListener("click", function (e) {
 });
 
 // how do I do I call this function
-minus.addEventListener("click", function (e, b) {
+minus.addEventListener("click", function (e) {
   e.preventDefault();
   buttonClicked = true;
   if (buttonClicked) {
@@ -91,12 +91,12 @@ decimal.addEventListener("click", function (e) {
   }
 });
 
-// function addition() {
-//   //numbers + zero
-//   console.log(typeof one.value);
-//   console.log(typeof two.value);
-//   //   return one.value + two.value;
-// }
+function addition(a, b) {
+  //numbers + zero
+  // console.log(typeof one.value);
+  // console.log(typeof two.value);
+  
+}
 
 equals.addEventListener("click", function (e) {
   e.preventDefault();
@@ -107,32 +107,31 @@ equals.addEventListener("click", function (e) {
     // console.log(addition());
     // return answer
     // if plus is clicked return addition function
-    // 
+    //
   }
 });
 
 plus.addEventListener("click", function (e) {
   e.preventDefault();
+  // console.log(e)
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("zero clicked!");
     // console.log(typeof plus.value);
     //if buttonClicked take first number and then add it to second number
-
-
+    return addition()
   }
 });
-
 
 //numbers buttons
 nine.addEventListener("click", function (e) {
   // console.log(this.getAttribute('zero'))
   e.preventDefault();
   buttonClicked = true;
-//   nine = parseInt(nine.value);
-// Try using Number() instead of parseInt()
+  //   nine = parseInt(nine.value);
+  // Try using Number() instead of parseInt()
   if (buttonClicked) {
-    console.log(typeof Number(nine))
+    console.log(typeof Number(nine));
   }
 });
 
@@ -142,7 +141,7 @@ eight.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("eight clicked!");
-    console.log(typeof Number(eight))
+    console.log(typeof Number(eight));
   }
 });
 
@@ -152,7 +151,7 @@ seven.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("seven clicked!");
-    console.log(typeof Number(seven))
+    console.log(typeof Number(seven));
   }
 });
 
@@ -162,7 +161,7 @@ six.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("six clicked!");
-    console.log(typeof Number(six))
+    console.log(typeof Number(six));
   }
 });
 
@@ -172,7 +171,7 @@ five.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("five clicked!");
-    console.log(typeof Number(five))
+    console.log(typeof Number(five));
   }
 });
 
@@ -182,7 +181,7 @@ four.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("four clicked!");
-    console.log(typeof Number(four))
+    console.log(typeof Number(four));
   }
 });
 
@@ -192,7 +191,7 @@ three.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("three clicked!");
-    console.log(typeof Number(three))
+    console.log(typeof Number(three));
   }
 });
 
@@ -202,7 +201,7 @@ two.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("two clicked!");
-    console.log(typeof Number(two))
+    console.log(typeof Number(two));
   }
 });
 
@@ -212,7 +211,7 @@ one.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("one clicked!");
-    console.log(typeof Number(one))
+    console.log(typeof Number(one));
   }
 });
 
@@ -222,7 +221,7 @@ zero.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("zero clicked!");
-    console.log(typeof Number(zero))
+    console.log(typeof Number(zero));
   }
 });
 
