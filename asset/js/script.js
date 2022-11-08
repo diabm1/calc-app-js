@@ -38,13 +38,50 @@ const screen = document.querySelector("#screen");
 //what represents num2?
 //it would be the number pressed
 
-// const mPlus;
-// const mMinus;
-// const mRecall;
-// const mClear;
+const mPlus = document.querySelector("#mPlus");
+const mMinus = document.querySelector("#mMinus");
+const mRecall = document.querySelector("#mRecall");
+const mClear = document.querySelector("#mClear");
 // ÷
 
 // const clearEntry = "";
+
+//memory buttons
+mPlus.addEventListener("click", function (e) {
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    // console.log("zero clicked!");
+    console.log(typeof mPlus.value);
+  }
+})
+
+mMinus.addEventListener("click", function (e) {
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    // console.log("zero clicked!");
+    console.log(typeof mMinus.value);
+  }
+})
+
+mRecall.addEventListener("click", function (e) {
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    // console.log("zero clicked!");
+    console.log(typeof mRecall.value);
+  }
+})
+
+mClear.addEventListener("click", function (e) {
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    // console.log("zero clicked!");
+    console.log(typeof mClear.value);
+  }
+})
 
 //operations buttons
 divide.addEventListener("click", function (e) {
