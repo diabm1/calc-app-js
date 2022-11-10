@@ -31,7 +31,7 @@ const decimal = document.querySelector("#decimal");
 const equals = document.querySelector("#equals");
 const plus = document.querySelector("#plus");
 
-const screen = document.querySelector("#screen");
+let screen = document.querySelector("#screen");
 // screen.innerHTML = Number(four.value) * Number(two.value);
 
 //what represents num1?
@@ -52,7 +52,13 @@ mPlus.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("zero clicked!");
-    console.log(typeof mPlus.value);
+    // console.log(typeof mPlus.value);
+
+    localStorage.setItem('keyName', mPlus.value)
+
+    // screen = localStorage.getItem("keyName")
+
+    console.log(localStorage.getItem("keyName"))
   }
 })
 
