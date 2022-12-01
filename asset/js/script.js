@@ -44,7 +44,15 @@ const mRecall = document.querySelector("#mRecall");
 const mClear = document.querySelector("#mClear");
 // ÷
 
-// const clearEntry = "";
+const clearEntry = document.querySelector("#clearEntry");
+
+clearEntry.addEventListener("click", function (e) {
+  e.preventDefault();
+  buttonClicked = true;
+  if (buttonClicked) {
+    screen.innerHTML = "";
+  }
+});
 
 //memory buttons
 mPlus.addEventListener("click", function (e) {
@@ -53,14 +61,15 @@ mPlus.addEventListener("click", function (e) {
   if (buttonClicked) {
     // console.log("zero clicked!");
     // console.log(typeof mPlus.value);
-
-    localStorage.setItem('keyName', mPlus.value)
-
+    // if nine pressed and then I press the m+ button then...
+    // how do I change the value to a number pressed
+    // let's press a button
+    // number button pressed then M+ add it to memory
+    // localStorage.setItem("M+", nine.value);
     // screen = localStorage.getItem("keyName")
-
-    console.log(localStorage.getItem("keyName"))
+    // console.log(localStorage.getItem("M+"));
   }
-})
+});
 
 mMinus.addEventListener("click", function (e) {
   e.preventDefault();
@@ -69,7 +78,7 @@ mMinus.addEventListener("click", function (e) {
     // console.log("zero clicked!");
     console.log(typeof mMinus.value);
   }
-})
+});
 
 mRecall.addEventListener("click", function (e) {
   e.preventDefault();
@@ -78,7 +87,7 @@ mRecall.addEventListener("click", function (e) {
     // console.log("zero clicked!");
     console.log(typeof mRecall.value);
   }
-})
+});
 
 mClear.addEventListener("click", function (e) {
   e.preventDefault();
@@ -87,7 +96,7 @@ mClear.addEventListener("click", function (e) {
     // console.log("zero clicked!");
     console.log(typeof mClear.value);
   }
-})
+});
 
 //operations buttons
 divide.addEventListener("click", function (e) {
@@ -115,7 +124,7 @@ minus.addEventListener("click", function (e) {
   if (buttonClicked) {
     // console.log("zero clicked!");
     // console.log(typeof minus.value);
-    return e - b;
+    // return e - b;
   }
 });
 
@@ -138,7 +147,7 @@ function addition(a, b) {
   //numbers + zero
   // console.log(typeof one.value);
   // console.log(typeof two.value);
-  
+  return a + b
 }
 
 equals.addEventListener("click", function (e) {
@@ -146,11 +155,14 @@ equals.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("zero clicked!");
-    console.log(typeof equals.value);
+    // console.log(typeof equals.value);
     // console.log(addition());
     // return answer
     // if plus is clicked return addition function
-    //
+    // if equal button clicked display result on screen
+    // const operator = `=`;
+    // screen.innerHTML = 
+    // return operator;
   }
 });
 
@@ -161,8 +173,15 @@ plus.addEventListener("click", function (e) {
   if (buttonClicked) {
     // console.log("zero clicked!");
     // console.log(typeof plus.value);
-    //if buttonClicked take first number and then add it to second number
-    return addition()
+    // if buttonClicked take first number and then add it to second number
+    // return addition();
+    // if buttoneClicked add first number to second number
+    // or add whatever number clicked to another number until equal button is clicked
+
+    // if button clicked then addition button clicked
+    // const operator = `+`;
+    // console.log(operator)
+    // return operator;
   }
 });
 
@@ -171,10 +190,11 @@ nine.addEventListener("click", function (e) {
   // console.log(this.getAttribute('zero'))
   e.preventDefault();
   buttonClicked = true;
-  //   nine = parseInt(nine.value);
+  // nine = parseInt(nine.value);
   // Try using Number() instead of parseInt()
   if (buttonClicked) {
-    console.log(typeof Number(nine));
+    screen.innerHTML = Number(nine.value);
+    // console.log(typeof Number(nine));
   }
 });
 
@@ -184,7 +204,8 @@ eight.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("eight clicked!");
-    console.log(typeof Number(eight));
+    screen.innerHTML = Number(eight.value);
+    // console.log(typeof Number(eight));
   }
 });
 
@@ -194,7 +215,8 @@ seven.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("seven clicked!");
-    console.log(typeof Number(seven));
+    screen.innerHTML = Number(seven.value);
+    // console.log(typeof Number(seven));
   }
 });
 
@@ -204,7 +226,8 @@ six.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("six clicked!");
-    console.log(typeof Number(six));
+    screen.innerHTML = Number(six.value);
+    // console.log(typeof Number(six));
   }
 });
 
@@ -214,7 +237,8 @@ five.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("five clicked!");
-    console.log(typeof Number(five));
+    screen.innerHTML = Number(five.value);
+    // console.log(typeof Number(five));
   }
 });
 
@@ -224,7 +248,8 @@ four.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("four clicked!");
-    console.log(typeof Number(four));
+    screen.innerHTML = Number(four.value);
+    // console.log(typeof Number(four));
   }
 });
 
@@ -234,7 +259,8 @@ three.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("three clicked!");
-    console.log(typeof Number(three));
+    screen.innerHTML = Number(three.value);
+    // console.log(typeof Number(three));
   }
 });
 
@@ -244,7 +270,8 @@ two.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("two clicked!");
-    console.log(typeof Number(two));
+    screen.innerHTML = Number(two.value);
+    // console.log(typeof Number(two));
   }
 });
 
@@ -254,7 +281,8 @@ one.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("one clicked!");
-    console.log(typeof Number(one));
+    screen.innerHTML = Number(one.value);
+    // console.log(typeof Number(one));
   }
 });
 
@@ -264,7 +292,8 @@ zero.addEventListener("click", function (e) {
   buttonClicked = true;
   if (buttonClicked) {
     // console.log("zero clicked!");
-    console.log(typeof Number(zero));
+    screen.innerHTML = Number(zero.value);
+    // console.log(typeof Number(zero));
   }
 });
 
