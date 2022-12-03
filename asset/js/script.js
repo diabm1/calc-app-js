@@ -166,6 +166,24 @@ equals.addEventListener("click", function (e) {
   }
 });
 
+// Test Case
+// Description: Add two numbers together
+// Step 1) press a number
+// EXPECTATION: number shows on screen
+// ACTUAL: number shows on screen
+
+// Step 2) press plus button
+// EXPECTATION: number gets stored on left side of operand
+// ACTUAL: 
+
+// Step 3) press another number
+// EXPECTATION: 
+// ACTUAL: 
+
+// Step 4) press equal sign
+// EXPECTATION: result shows on screen
+// ACTUAL: 
+
 plus.addEventListener("click", function (e) {
   e.preventDefault();
   // console.log(e)
