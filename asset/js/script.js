@@ -143,12 +143,13 @@ decimal.addEventListener("click", function (e) {
   }
 });
 
-function addition(a, b) {
-  //numbers + zero
-  // console.log(typeof one.value);
-  // console.log(typeof two.value);
-  return a + b
-}
+// function addition(a, b) {
+//   //numbers + zero
+//   // console.log(typeof one.value);
+//   // console.log(typeof two.value);
+//   // let b = 1
+//   return a + b
+// }
 
 equals.addEventListener("click", function (e) {
   e.preventDefault();
@@ -173,11 +174,12 @@ equals.addEventListener("click", function (e) {
 // ACTUAL: number shows on screen
 
 // Step 2) press plus button
-// EXPECTATION: number gets stored on left side of operand
+// EXPECTATION: actual + is recoginezed
+// number gets stored on left side of operand
 // ACTUAL: 
 
 // Step 3) press another number
-// EXPECTATION: 
+// EXPECTATION: number gets stored on right side of operand
 // ACTUAL: 
 
 // Step 4) press equal sign
@@ -200,6 +202,7 @@ plus.addEventListener("click", function (e) {
     // const operator = `+`;
     // console.log(operator)
     // return operator;
+    // console.log(addition(e))
   }
 });
 
