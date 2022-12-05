@@ -2,24 +2,34 @@
 //now make all of these buttons work
 
 let zero = document.querySelector("#zero");
+let actualZero = Number(zero.value);
 // console.log(zero)
 let one = document.querySelector("#one");
+let actualOne = Number(one.value);
 // console.log(one)
 let two = document.querySelector("#two");
+let actualTwo = Number(two.value);
 // console.log(two)
 let three = document.querySelector("#three");
+let actualThree = Number(three.value);
 // console.log(three)
 let four = document.querySelector("#four");
+let actualFour = Number(four.value);
 // console.log(four)
 let five = document.querySelector("#five");
+let actualFive = Number(five.value);
 // console.log(five)
 let six = document.querySelector("#six");
+let actualSix = Number(six.value);
 // console.log(six)
 let seven = document.querySelector("#seven");
+let actualSeven = Number(seven.value);
 // console.log(seven)
 let eight = document.querySelector("#eight");
+let actualEight = Number(eight.value);
 // console.log(eight)
 let nine = document.querySelector("#nine");
+let actualNine = Number(nine.value);
 // nine = Number(nine.value)
 // console.log(nine)
 let buttonClicked = false;
@@ -143,13 +153,18 @@ decimal.addEventListener("click", function (e) {
   }
 });
 
-// function addition(a, b) {
-//   //numbers + zero
-//   // console.log(typeof one.value);
-//   // console.log(typeof two.value);
-//   // let b = 1
-//   return a + b
-// }
+function addition(a) {
+  //   //numbers + zero
+  //   // console.log(typeof one.value);
+  //   // console.log(typeof two.value);
+  //   // let b = 1
+  let total = 0;
+  // while (a < 10) {
+  //   a += total;
+
+  //   console.log(total)
+  // }
+}
 
 equals.addEventListener("click", function (e) {
   e.preventDefault();
@@ -162,7 +177,7 @@ equals.addEventListener("click", function (e) {
     // if plus is clicked return addition function
     // if equal button clicked display result on screen
     // const operator = `=`;
-    // screen.innerHTML = 
+    // screen.innerHTML =
     // return operator;
   }
 });
@@ -176,15 +191,15 @@ equals.addEventListener("click", function (e) {
 // Step 2) press plus button
 // EXPECTATION: actual + is recoginezed
 // number gets stored on left side of operand
-// ACTUAL: 
+// ACTUAL: nothing happens
 
 // Step 3) press another number
 // EXPECTATION: number gets stored on right side of operand
-// ACTUAL: 
+// ACTUAL:
 
 // Step 4) press equal sign
 // EXPECTATION: result shows on screen
-// ACTUAL: 
+// ACTUAL: nothing shows on screen
 
 plus.addEventListener("click", function (e) {
   e.preventDefault();
@@ -197,12 +212,13 @@ plus.addEventListener("click", function (e) {
     // return addition();
     // if buttoneClicked add first number to second number
     // or add whatever number clicked to another number until equal button is clicked
-
     // if button clicked then addition button clicked
     // const operator = `+`;
-    // console.log(operator)
+    // console.log(typeof Number(operator))
     // return operator;
-    // console.log(addition(e))
+    // what do I put inside of the addition function
+    console.log(addition(actualOne))
+    // console.log(addition(actualOne, actualOne))
   }
 });
 
@@ -216,6 +232,7 @@ nine.addEventListener("click", function (e) {
   if (buttonClicked) {
     screen.innerHTML = Number(nine.value);
     // console.log(typeof Number(nine));
+    console.log(actualNine);
   }
 });
 
@@ -227,6 +244,7 @@ eight.addEventListener("click", function (e) {
     // console.log("eight clicked!");
     screen.innerHTML = Number(eight.value);
     // console.log(typeof Number(eight));
+    console.log(actualEight);
   }
 });
 
@@ -238,6 +256,7 @@ seven.addEventListener("click", function (e) {
     // console.log("seven clicked!");
     screen.innerHTML = Number(seven.value);
     // console.log(typeof Number(seven));
+    console.log(actualSeven);
   }
 });
 
@@ -249,6 +268,7 @@ six.addEventListener("click", function (e) {
     // console.log("six clicked!");
     screen.innerHTML = Number(six.value);
     // console.log(typeof Number(six));
+    console.log(actualSix);
   }
 });
 
@@ -260,6 +280,7 @@ five.addEventListener("click", function (e) {
     // console.log("five clicked!");
     screen.innerHTML = Number(five.value);
     // console.log(typeof Number(five));
+    console.log(actualFive);
   }
 });
 
@@ -271,6 +292,7 @@ four.addEventListener("click", function (e) {
     // console.log("four clicked!");
     screen.innerHTML = Number(four.value);
     // console.log(typeof Number(four));
+    console.log(actualFour);
   }
 });
 
@@ -282,6 +304,7 @@ three.addEventListener("click", function (e) {
     // console.log("three clicked!");
     screen.innerHTML = Number(three.value);
     // console.log(typeof Number(three));
+    console.log(actualThree);
   }
 });
 
@@ -293,6 +316,7 @@ two.addEventListener("click", function (e) {
     // console.log("two clicked!");
     screen.innerHTML = Number(two.value);
     // console.log(typeof Number(two));
+    console.log(actualTwo);
   }
 });
 
@@ -304,6 +328,7 @@ one.addEventListener("click", function (e) {
     // console.log("one clicked!");
     screen.innerHTML = Number(one.value);
     // console.log(typeof Number(one));
+    console.log(actualOne);
   }
 });
 
@@ -315,6 +340,7 @@ zero.addEventListener("click", function (e) {
     // console.log("zero clicked!");
     screen.innerHTML = Number(zero.value);
     // console.log(typeof Number(zero));
+    console.log(actualZero);
   }
 });
 
