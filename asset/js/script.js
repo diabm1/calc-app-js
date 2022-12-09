@@ -39,7 +39,7 @@ const multiply = document.querySelector("#multiply");
 const minus = document.querySelector("#minus");
 const decimal = document.querySelector("#decimal");
 const equals = document.querySelector("#equals");
-const plus = document.querySelector("#plus");
+const plus = document.getElementById("plus");
 
 let screen = document.querySelector("#screen");
 // screen.innerHTML = Number(four.value) * Number(two.value);
@@ -55,6 +55,11 @@ const mClear = document.querySelector("#mClear");
 // ÷
 
 const clearEntry = document.querySelector("#clearEntry");
+
+// let firstOperand = null;
+let operand = null;
+let operator = null;
+// let secondOperand = null;
 
 clearEntry.addEventListener("click", function (e) {
   e.preventDefault();
@@ -190,11 +195,11 @@ equals.addEventListener("click", function (e) {
 
 // Step 2) press plus button
 // EXPECTATION: actual + is recoginezed
-// number gets stored on left side of operand
+// number gets stored on left side of operator
 // ACTUAL: nothing happens
 
 // Step 3) press another number
-// EXPECTATION: number gets stored on right side of operand
+// EXPECTATION: number gets stored on right side of operator
 // ACTUAL:
 
 // Step 4) press equal sign
@@ -217,8 +222,29 @@ plus.addEventListener("click", function (e) {
     // console.log(typeof Number(operator))
     // return operator;
     // what do I put inside of the addition function
-    console.log(addition(actualOne))
+    // console.log(addition(actualOne))
     // console.log(addition(actualOne, actualOne))
+
+    //firstOperand = numberClicked
+
+    // let arr = []
+    for (let i = 0; i < 10; i++) {
+      // const element = array[i];
+      operand = i;
+      // console.log(operand)
+      if (operand === 0) {
+        operator += operand;
+      } else if (operand === 1) {
+        operator += operand;
+      } else if (operand === 2) {
+        operator += operand;
+      }
+    }
+    console.log(operator);
+    // operator = +
+    // operator += operand;
+    // console.log(operator);
+    // console.log(operand)
   }
 });
 
@@ -232,7 +258,8 @@ nine.addEventListener("click", function (e) {
   if (buttonClicked) {
     screen.innerHTML = Number(nine.value);
     // console.log(typeof Number(nine));
-    console.log(actualNine);
+    // console.log(actualNine);
+    operand = 9;
   }
 });
 
@@ -244,7 +271,8 @@ eight.addEventListener("click", function (e) {
     // console.log("eight clicked!");
     screen.innerHTML = Number(eight.value);
     // console.log(typeof Number(eight));
-    console.log(actualEight);
+    // console.log(actualEight);
+    operand = 8;
   }
 });
 
@@ -256,7 +284,8 @@ seven.addEventListener("click", function (e) {
     // console.log("seven clicked!");
     screen.innerHTML = Number(seven.value);
     // console.log(typeof Number(seven));
-    console.log(actualSeven);
+    // console.log(actualSeven);
+    operand = 7;
   }
 });
 
@@ -268,7 +297,8 @@ six.addEventListener("click", function (e) {
     // console.log("six clicked!");
     screen.innerHTML = Number(six.value);
     // console.log(typeof Number(six));
-    console.log(actualSix);
+    // console.log(actualSix);
+    operand = 6;
   }
 });
 
@@ -280,7 +310,8 @@ five.addEventListener("click", function (e) {
     // console.log("five clicked!");
     screen.innerHTML = Number(five.value);
     // console.log(typeof Number(five));
-    console.log(actualFive);
+    // console.log(actualFive);
+    operand = 5;
   }
 });
 
@@ -292,7 +323,8 @@ four.addEventListener("click", function (e) {
     // console.log("four clicked!");
     screen.innerHTML = Number(four.value);
     // console.log(typeof Number(four));
-    console.log(actualFour);
+    // console.log(actualFour);
+    operand = 4;
   }
 });
 
@@ -304,7 +336,8 @@ three.addEventListener("click", function (e) {
     // console.log("three clicked!");
     screen.innerHTML = Number(three.value);
     // console.log(typeof Number(three));
-    console.log(actualThree);
+    // console.log(actualThree);
+    operand = 3;
   }
 });
 
@@ -316,7 +349,9 @@ two.addEventListener("click", function (e) {
     // console.log("two clicked!");
     screen.innerHTML = Number(two.value);
     // console.log(typeof Number(two));
-    console.log(actualTwo);
+    // console.log(actualTwo);
+    operand = 2;
+    console.log(secondOperand);
   }
 });
 
@@ -328,7 +363,9 @@ one.addEventListener("click", function (e) {
     // console.log("one clicked!");
     screen.innerHTML = Number(one.value);
     // console.log(typeof Number(one));
-    console.log(actualOne);
+    // console.log(actualOne);
+    operand = 1;
+    // console.log(firstOperand);
   }
 });
 
@@ -340,7 +377,8 @@ zero.addEventListener("click", function (e) {
     // console.log("zero clicked!");
     screen.innerHTML = Number(zero.value);
     // console.log(typeof Number(zero));
-    console.log(actualZero);
+    // console.log(actualZero);
+    operand = 0;
   }
 });
 
