@@ -351,7 +351,6 @@ two.addEventListener("click", function (e) {
     // console.log(typeof Number(two));
     // console.log(actualTwo);
     operand = 2;
-    console.log(secondOperand);
   }
 });
 
@@ -407,8 +406,3 @@ zero.addEventListener("click", function (e) {
 // 3 x 7 = (21)
 // M+ (takes 54, adds 21, stores the result 75)
 // MR (displays the result 75)
-
-// I think it will help you.
-
-//I feel like trying to add a couple of numbers just to get a feel for what the logic might look like
-//now to have it show on screen
